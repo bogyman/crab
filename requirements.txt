@@ -1,0 +1,1 @@
+-e git+https://github.com/tomchristie/apistar/@version-0.2#egg=apistar
