@@ -1,1 +1,4 @@
 -e git+https://github.com/tomchristie/apistar/@version-0.2#egg=apistar
+sqlalchemy
+psycopg2
+openapi-codec
