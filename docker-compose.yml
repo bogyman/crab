@@ -4,10 +4,10 @@ services:
 
     crab1:
         container_name: crab1
-        command: /app_root/.env/bin/python3
+        command: /.env/bin/apistar run
+#        command: ls -la
         ports:
-            - "80:80"
-            - "443:443"
+            - "8080:80"
         build:
             context: ./
         restart: on-failure:1
