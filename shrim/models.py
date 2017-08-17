@@ -4,7 +4,7 @@ from shrim._sqlalchemy_base import Base
 
 
 class Reservation(Base):
-    __tablename__ = "Customer"
+    __tablename__ = "reservations"
     id = Column(Integer, primary_key=True)
     first_name = Column(String(length=200))
     last_name = Column(String(length=200))
