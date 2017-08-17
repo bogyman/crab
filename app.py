@@ -1,3 +1,4 @@
+from apistar.backends import sqlalchemy_backend
 from apistar.frameworks.asyncio import ASyncIOApp as App
 
 from shrim._sqlalchemy_base import Base
@@ -11,4 +12,9 @@ settings = {
     }
 }
 
-app = App(routes=routes)
+app = App(
+    routes=routes,
+    settings=settings,
+    commands=sqlalchemy_backend.commands,
+    components=sqlalchemy_backend.components
+)
